@@ -16,5 +16,10 @@ vagrant@ubuntu-xenial:~$ ./work-dir/ruby-setup2.sh
 vagrant@ubuntu-xenial:~$ exit
 host@host:~$ vagrant ssh
 ```
-
 After that you can use the new Ruby on Rails environment!
+## LAUNCH A RAILS SERVER:
+To launch rails server, type:
+```console
+host@host:~$ rails server -b 0.0.0.0
+```
+And access [localhost:3000](http://localhost:3000).
