@@ -70,7 +70,3 @@ echo "Done!"
 echo "Enjoy your new environment!" 
 
 dt=$(date +"%Y%m%d%H%M%S")
-
-echo $dt > .step1
-
-exit
