@@ -2,7 +2,7 @@
 
 #Author: Rennan Felipe
 #Email: rennan.chaves95@gmail.com
-#Version: 1.5.1
+#Version: 1.5.2
 #Licence: MIT 
 #Description: Scrip file to automate the Rails environment
 #Fonts: Code based on the follow article: https://gorails.com/setup/ubuntu/18.10#final-steps
@@ -22,11 +22,11 @@ then
     echo "Second step!"
     echo ""
 
-    echo "rvm install 2.5.1"
-    rvm install 2.5.1
+    echo "rvm install 2.7.0"
+    rvm install 2.7.0
 
-    echo "rvm use 2.5.1 --default"
-    rvm use 2.5.1 --default
+    echo "rvm use 2.7.0 --default"
+    rvm use 2.7.0 --default
     ruby -v
 
     echo "Install Bundler"
@@ -34,7 +34,7 @@ then
 
     echo "Install Rails!"
     curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-    gem install rails -v 5.2.0
+    gem install rails -v 6.0.2.1
     rails -v
 
     echo "Done!"
@@ -48,7 +48,7 @@ else
     sudo apt-get install dialog -y
   
     echo "Install Node.js and Yarn"
-    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
     sudo apt-get update -y
